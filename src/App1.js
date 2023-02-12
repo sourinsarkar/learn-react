@@ -1,10 +1,10 @@
-// import Places from './components/Places.'
+import Fplaces from './components/Places.'
 
 
 function App1() {
-    return <>
-    hellou
-    </>
+    return <div>
+        <Fplaces />
+    </div>
 }
 
 export default App1
