@@ -24,7 +24,13 @@ function App() {
         {anything.map((items, index) => {
             return (
                 <div>
-                    <li>{items}</li>
+                    {/* <li>{items}</li> */}
+
+                    <ol key = {index}>
+                        {items.map((subitems, subindex) => {
+                            return <li key = {subindex}>{subitems}</li>
+                        })}
+                    </ol>
                 </div>
             )
         })}
