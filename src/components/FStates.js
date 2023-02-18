@@ -3,7 +3,7 @@ import CStates from './CStates'
 
 export default function FStates() {
     const statesData = [
-        {state : "Jharkhand", capital : "Ranchi"},
+        {state : "Bihar", capital : "Ranchi"},
         {state : "Bihar", capital : "Patna"},
         {state : "West Bengal", capital : "Kolkata"},
         {state : "Odisha", capital : "Bhuvneshwar"},
