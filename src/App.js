@@ -1,30 +1,19 @@
-import React, { Component } from 'react'
+import React, {useState} from 'react'
 
-export default class App extends Component {
-  
-  constructor(props) {
-    super(props)
-    this.state = {
-      count : 0,
-    }
-  }
+export default function App() {
+  const [count, setCount] = useState(0);
+  // // const sub = () => {
+  // //   if(count >= 1) {
+  // //     setCount(count - 1) 
+  // //   }
+  // }
 
-  render() {
-
-    const thecount = this.state.count;
-    const addOne = thecount + 1;
-    const addTwo = thecount + 2;
-    const addThree = thecount + 3;
-    const minusOne = thecount - 1;
-
-    return (
-      <div>
-        <h1>{thecount}</h1>
-        <button onClick = {() => this.setState({count : addOne})} >Add one</button>
-        <button onClick = {() => this.setState({count : addTwo})} >Add two</button>
-        <button onClick = {() => this.setState({count : addThree})} >Add three</button>
-        <button onClick = {() => this.setState({count : minusOne})} >Minus One</button>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick = {() => setCount(count + 1)} >Add</button>
+      {/* <button onClick = {sub} >Sub</button> */}
+      <button onClick = {() => setCount(count - 1)} >Sub</button>
+    </div>
+  )
 }
